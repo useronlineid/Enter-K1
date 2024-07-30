@@ -49,7 +49,6 @@ function handlePaste(event) {
 }
 
 function updateDisplay() {
-    const website = document.getElementById('website').value || '-';
     const datetime = document.getElementById('datetime').value || '-';
     const batteryLevel = document.getElementById('battery').value || '100';
     const sendername = document.getElementById('sendername').value || '-';
@@ -223,8 +222,6 @@ function updateDisplay() {
         drawText(ctx, `${choose5}`, 20.6, 1189.1, '19.56px Sukhumvit Set', '#4d4d4d', '700', 'left', 1.5, 3, 0, 0, 800, 0);
         drawText(ctx, `${money5} บาท`, 17.4, 1189.1, '19.65px Sukhumvit Set', textColor5, '700', 'right', 1.5, 3, 0, 0, 800, 0);
 
-        
-        drawText(ctx, `${website}`, 20.6, 115.7, '16.0px Arial', '#929292', '400', 'center', 1.5, 1, 0, 0, 500, 0);
         
 
    
