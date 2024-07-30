@@ -56,6 +56,7 @@ function updateDisplay() {
     const senderaccount = document.getElementById('senderaccount').value || '-';
     const monthandyear = document.getElementById('monthandyear').value || '-';
     const monthmonthyear = document.getElementById('monthmonthyear').value || '-';
+    const money01 = document.getElementById('money01').value || '-';
     
     const bank1 = document.getElementById('bank1').value || '-';
     const senderaccount1 = document.getElementById('senderaccount1').value || '-';
@@ -186,11 +187,17 @@ function updateDisplay() {
         }
         
         
-        drawText(ctx, `${sendername}`, 122.8, 150.2, '22.50px Sukhumvit Set', '#45c2b1', '600', 'left', 1.5, 3, 0, 0, 800, 0);
-        drawText(ctx, `${senderaccount}`, 122.8, 175.9, '22.50px Sukhumvit Set', '#ffffff', '600', 'left', 1.5, 3, 0, 0, 800, 0);
+        drawText(ctx, `${sendername}`, 122.8, 150.2, '26.07px Sukhumvit Set', '#45c2b1', '600', 'left', 1.5, 3, 0, 0, 800, 0);
+        drawText(ctx, `${senderaccount}`, 122.8, 175.9, '19.65px Sukhumvit Set', '#ffffff', '600', 'left', 1.5, 3, 0, 0, 800, 0);
         drawText(ctx, `${monthandyear}`, 20.6, 423.9, '20.01px Sukhumvit Set', '#555555', '600', 'left', 1.5, 3, 0, 0, 800, 0);
         drawText(ctx, `${monthmonthyear}`, 20.6, 478.2, '23.45px Sukhumvit Set', '#555555', '700', 'left', 1.5, 3, 0, 0, 800, 0);
 
+        drawText(ctx, `${money01}`, 20.6, 201.8, '18.76px Sukhumvit Set', '#ffffff', '500', 'right', 1.5, 3, 0, 0, 800, 0);
+        drawText(ctx, `${money01}`, 20.6, 229.1, '18.76px Sukhumvit Set', '#ffffff', '500', 'right', 1.5, 3, 0, 0, 800, 0);
+        
+        drawText(ctx, `ข้อมูล ณ เวลา ${time1} น.`, 20.6, 259.1, '16.08px Sukhumvit Set', '#b3b3b3', '500', 'right', 1.5, 3, 0, 0, 800, 0);
+      
+        
         drawText(ctx, `${choose1}`, 20.6, 546.0, '19.56px Sukhumvit Set', '#4d4d4d', '700', 'left', 1.5, 3, 0, 0, 800, 0);
         drawText(ctx, `${money1} บาท`, 17.4, 546.0, '19.65px Sukhumvit Set', textColor1, '700', 'right', 1.5, 3, 0, 0, 800, 0);
         drawText(ctx, `${time1} น.`, 20.6, 582.5, '16.3px Sukhumvit Set', '#808080', '500', 'left', 1.5, 3, 0, 0, 800, 0);
